@@ -1,0 +1,297 @@
+@import "_nullstyle";
+@import "_fonts";
+
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+.wrapper{   
+    height: auto;
+}
+
+
+//!Голова
+.header{
+    background: url('/img/bg.png') no-repeat center top / cover;
+    height: auto;
+    background-color: #242424;
+    &__content {
+        margin: 175px 0px 0px 0px ;
+        padding: 0px 10px;
+    }
+    &__link{
+        display: flex;
+        margin-bottom: 10px;
+    }
+    &__title {
+        display: flex;
+        font-weight: 700;
+        font-size: 72px;
+        line-height: 85px;
+        & a{color:#E7E7E7;}
+    }
+
+    &__logo {
+        
+    }
+
+    &__subtitle {
+        padding: 0px 10px;
+        font-size: 24px;
+        line-height: 28px;
+        color: #E7E7E7;
+        margin-bottom: 40px;
+    }
+    &__button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 5px;
+        max-width: 381px;
+        height: 76px;
+        background: #313131d0;
+        box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 19px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        a{
+            color:#E7E7E7;
+            padding: 0px 15px;
+        }
+        &:hover{
+            transition: 0.3s all;
+            background: #242424;
+            box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.4);
+        }
+        &:active{
+            transition: 0.3s all;
+            background: #808080dd;
+        }
+    }
+    .conteiner{
+        max-width: 1260px;
+        height: 680px;
+        margin:0 auto;
+        .menu{
+            display: flex;
+            height: 70px;
+            padding: 0px 15px;
+            justify-content: center;
+            align-items: center;
+            &__button{
+                display: flex;
+                width: 124px;
+                height: 32px;
+                background: rgba(255, 255, 255, 0.3);
+                border-radius: 9px;
+                align-items: center;
+                justify-content: center;
+                a{color: #dcdbdb;}
+                &:hover{
+                    transition: 0.3s all;
+                    background: rgba(255, 255, 255, 1);
+                    a{color: #000000;}
+                }
+            }
+            &__logo{
+                
+            }
+            &__nav{
+               margin: 0 auto;
+            }
+            &__link{
+                display: flex;
+                gap:60px;
+                margin: 0px 0px;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 21px;
+                letter-spacing: 2px;
+                a{color: #dcdbdb;}
+                & a:hover{
+                    text-decoration: underline;
+                    color:#fff;
+                }
+            }
+        }
+    }
+}
+//!main
+.main{
+    height: auto;
+    background-color: #242424;
+    .conteiner{
+        max-width: 1260px;
+        height: auto;
+        margin:0 auto;
+        
+    }
+    &__content{
+        padding: 70px 20px;
+    }
+    &__block{
+        display: flex;
+        color: #fff;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+    &__title{
+        margin-right: auto;
+        flex: 0 1 50%;
+        max-width: 587px;
+        min-height: 500px;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 56px;
+    }
+    &__subtitle{
+        text-align: left;
+        margin: 20px 0px 30px 0px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    &__image{
+        margin-bottom: 20px;
+        flex: 0 1 50%;
+        max-width: 440px;
+        max-height: 440px;
+        background-color: #ebb609;
+    }
+
+    &__content{
+        padding: 70px 20px;
+    }
+    &__block1{
+        margin-bottom: 30px;
+        flex-direction: row-reverse;
+        display: flex;
+        color: #fff;
+        flex-wrap: wrap;
+    }
+    &__title1{
+        margin-left: auto;
+        flex: 0 1 50%;
+        min-height: 500px;
+        max-width: 587px;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 56px;
+    }
+    &__subtitle1{
+        text-align: left;
+        margin: 20px 0px 30px 0px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    &__image1{
+        padding: 20px;
+        margin-bottom: 20px;
+        flex: 0 1 50%;
+        max-width: 440px;
+        max-height: 440px;
+        background-color: #ebb609;
+    }
+}
+
+.menu__burger{
+    display: none;
+}
+//!footer
+.footer {
+    background: url('/img/bgfooter.png') no-repeat center bottom / cover;
+    height: auto;
+    padding-bottom: 70px;
+    .conteiner{
+        max-width: 1260px;
+        height: auto;
+        margin:0 auto;
+    }
+	&_content {
+        text-align: center;
+	}
+	&__logo {
+        padding-top: 23px;
+        margin-bottom: 43px;
+	}
+    &__title {
+        font-weight: 700;
+        font-size: 72px;
+        line-height: 85px;
+        color: #FFFFFF;
+        margin-bottom: 55px;
+	}
+}
+.section {  
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 20px;
+    &__block{
+        flex: 1 1 47%;
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+        background: #2C2C2C;
+        border-radius: 10px;
+       
+    }
+	&__text { 
+	}
+	&__title {
+        margin-top: 14px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        color: #E7E7E7;
+	}
+
+	&__subtitle {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        color: #FFFFFF;
+	}
+
+	&__title-btn {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 10px;
+	}
+
+	&__button {
+        max-width: 191px;
+        min-height: 48px;
+        background: rgba(200, 212, 255, 0.24);
+        border-radius: 6px;
+        margin-bottom: 20px;
+        &:hover{
+            transition: 0.3s all;
+            background: rgba(200, 212, 255, 1);
+            a{color:#000000}
+        }
+        &:active{
+            transition: 0.3s all;
+            background: rgb(136, 162, 255);
+            a{color:#000000}
+        }
+        .text_button{
+            
+        }
+        a{
+            display: flex;
+            justify-content: center;
+            padding-top:10px;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            color: #FFFFFF;
+        }
+	}
+}
+@import "_media";
