@@ -12,7 +12,7 @@ body{
 
 //!Голова
 .header{
-    background: url('/img/bg.png') no-repeat center top / cover;
+    background: url('../img/bg.png') no-repeat center top / cover;
     height: auto;
     background-color: #242424;
     &__content {
@@ -201,7 +201,7 @@ body{
 }
 //!footer
 .footer {
-    background: url('/img/bgfooter.png') no-repeat center bottom / cover;
+    background: url('../img/bgfooter.png') no-repeat center bottom / cover;
     height: auto;
     padding-bottom: 70px;
     .conteiner{

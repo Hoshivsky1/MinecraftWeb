@@ -80,7 +80,7 @@ body {
 }
 
 .header {
-  background: url("/img/bg.png") no-repeat center top/cover;
+  background: url("../img/bg.png") no-repeat center top/cover;
   height: auto;
   background-color: #242424;
 }
